@@ -1,0 +1,11 @@
+window.onload = function() {
+    setTimeout(jivo_put_init_event(), 3000);
+    function jivo_put_init_event () {
+      var textarea = document.querySelector('iframe textarea');
+      console.log('textarea: ' + textarea);
+      textarea.onkeydown = function () {
+        alert('первое сообщение');
+        yaCounter20803486.reachGoal("jivo_dialog_start");
+      }
+    }
+  }
